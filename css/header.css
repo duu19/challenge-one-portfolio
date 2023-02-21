@@ -1,0 +1,35 @@
+.header-bg {
+    max-width: 1200px;
+    display: flex;
+    padding: 40px 20px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+}
+
+.navbar-menu li {
+    list-style: none;
+}
+
+.navbar-menu {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.navbar-menu a {
+    text-transform: lowercase;
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.navbar-menu a:hover {
+    transition: 0.3s;
+    color: var(--strong-color);
+}

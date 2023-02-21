@@ -1,0 +1,42 @@
+#slider {
+    height: 450px;
+    display: flex;
+    align-items: center;
+}
+
+.wrapper{
+    width: 100%;
+  }
+
+.carousel{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.carousel .card{
+    color: #fff;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+}
+
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.owl-dot{
+    height: 15px;
+    width: 45px;
+    margin: 0 5px;
+    outline: none;
+    border-radius: 14px;
+    border: 2px solid var(--strong-color)!important;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+  
+.owl-dot.active,
+.owl-dot:hover{
+    background: var(--strong-color)!important;
+}

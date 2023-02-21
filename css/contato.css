@@ -1,0 +1,97 @@
+.contato-bg {
+    height: auto;
+    width: 100%;
+    background: var(--strong-color);
+}
+
+.contato-tittle {
+    padding: 0px 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+    color: #fff;
+    font-size: 5rem;
+    text-transform: uppercase;
+    padding-top: 2rem;
+}
+
+.contato-img {
+    width: 500px;
+    border-radius: 6px;
+}
+
+.contato-container {
+    max-width: 1200px;
+    padding: 40px 20px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+}
+
+.form-input {
+    display: flex;
+    gap: 10px;
+}
+
+.input1 input {
+    width: 320px;
+}
+
+.input2 input {
+    width: 320px;
+}
+
+.form input {
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 0.85rem;
+}
+
+.form textarea {
+    border-radius: 6px;
+    padding: 15px;
+}
+
+@media (max-width: 1200px) {
+    .contato-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+}
+
+@media (max-width: 700px) {
+    .contato-tittle {
+    text-align: center;
+    font-size: 4rem;
+    }
+    .form input {
+        width: 350px;
+    }
+}
+
+@media (max-width: 550px) {
+    .contato-container li {
+        font-size: 2rem;
+    }
+    .contato-img {
+        width: 350px;
+    }
+}
+
+@media (max-width: 450px) {
+    .contato-container li {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 410px) {
+    .contato-container h1 {
+        font-size: 3.5rem;
+    }
+}
