@@ -71,9 +71,12 @@
     font-size: 4rem;
     }
     .form input {
-        width: 350px;
+        width: 325px;
     }
-}
+    .form-input {
+        flex-direction: column;
+    }
+} 
 
 @media (max-width: 550px) {
     .contato-container li {

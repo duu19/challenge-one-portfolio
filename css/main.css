@@ -21,6 +21,28 @@
     font-size: 5rem;
 }
 
+.main-box ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    justify-content: end;
+    margin-top: 25px;
+    align-items: center;
+}
+
+.main-box a {
+    text-transform: lowercase;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.main-box a:hover {
+    transition: 0.5s;
+    color: var(--strong-color);
+}
+
 .main-bg p {
     font-size: 2.2rem;
     text-align: end;
@@ -41,5 +63,11 @@
 @media (max-width: 550px) {
     .main-box h1 {
         font-size: 3rem;
+    }
+    .main-box a {
+        font-size: 1rem;
+    }
+    .main-box ul {
+        gap: 25px;
     }
 }
