@@ -96,3 +96,9 @@
         font-size: 3.3rem;
     }
 }
+
+@media (max-width: 350px) {
+    .cursos-box h1 {
+        font-size: 3rem;
+    }
+}

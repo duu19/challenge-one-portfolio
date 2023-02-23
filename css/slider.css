@@ -41,8 +41,11 @@
     background: var(--strong-color)!important;
 }
 
-@media (max-width: 380px) {
+@media (max-width: 450px) {
+    #slider {
+        height: 400px;
+    }
     .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
-        width: 35px;
+        width: 15px;
     }
 }
