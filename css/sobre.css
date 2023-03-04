@@ -13,6 +13,7 @@
 }
 
 .sobre-box h2 {
+    color: var(--text-black);
     font-size: 5rem;
     text-transform: uppercase;
     word-break: break-all;

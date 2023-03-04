@@ -1,14 +1,14 @@
 .contato-bg {
     height: auto;
     width: 100%;
-    background: var(--strong-color);
+    background: var(--contato-bg);
 }
 
 .contato-tittle {
     padding: 0px 20px;
     margin: 0 auto;
     max-width: 1200px;
-    color: #fff;
+    color: var(--contato-text);
     font-size: 5rem;
     text-transform: uppercase;
     padding-top: 2rem;
@@ -79,7 +79,7 @@ input:-webkit-autofill {
     justify-content: center;
     padding: 10px 20px;
     background: white;
-    color: var(--text-color);
+    color: #3a3a3a;
     text-decoration: none;
     text-transform: uppercase;
     border-radius: 6px;

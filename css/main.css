@@ -19,6 +19,7 @@
 
 .main-bg h1 {
     font-size: 5rem;
+    color: var(--text-black);
 }
 
 .main-box ul {

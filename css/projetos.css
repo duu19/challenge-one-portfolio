@@ -14,7 +14,7 @@
 
 .projetos-tittle2 {
     font-size: 6rem;
-    color: #2c2c2c;
+    color: var(--text-black);
     text-align: start;
     max-width: 1200px;
     text-transform: uppercase;
@@ -46,7 +46,7 @@
 
 .projetos-box {
     width: 370px;
-    background: #e2e2e2;
+    background: var(--projetos-bg);
     border-radius: 8px;
     padding: 15px;
     height: auto;
@@ -58,7 +58,7 @@
 }
 
 .projetos-box p {
-    color: var(--text-color);
+    color: var(--projetos-text);
     margin-bottom: 5px;
 }
 
@@ -74,7 +74,7 @@
     background: var(--strong-color);
     padding: 6px;
     border-radius: 4px;
-    border: 2px solid slateblue;
+    border: 2px solid var(--strong-color);
 }
 
 @media (max-width: 1199px) {

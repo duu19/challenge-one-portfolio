@@ -1,5 +1,5 @@
 #slider {
-    height: 450px;
+    height: 100%;
     display: flex;
     align-items: center;
     z-index: 1;
@@ -68,7 +68,7 @@
 
 @media (max-width: 450px) {
     #slider {
-        height: 400px;
+        height: 100%;
     }
     .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
         width: 15px;

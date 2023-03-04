@@ -1,6 +1,6 @@
 .cursos-bg {
     height: auto;
-    background: #111;
+    background: var(--background-black);
     color: var(--text-color-light);
 }
 
@@ -33,7 +33,7 @@
 }
 
 .conhecimentos-box h3 {
-    color: #fff;
+    color: var(--body-bg);
     text-transform: uppercase;
     font-size: 2rem;
     margin-bottom: 15px;
@@ -42,7 +42,7 @@
 .conhecimentos-box ul {
     list-style: none;
     font-size: 1.4rem;
-    color: #fff;
+    color: var(--text-color-light);
 }
 
 .conhecimentos-box li {

@@ -2,7 +2,7 @@
     height: auto;
     width: 100%;
     padding: 20px;
-    background-color: #fff;
+    background-color: var(--body-bg);
 }
 
 .footer-box {
@@ -23,11 +23,13 @@
 .footer-box h3 {
     text-transform: uppercase;
     font-size: 1.3rem;
+    color: var(--text-black);
 }
 
 .footer-list {
     gap: 10px;
     display: flex;
+    color: var(--text-black);
     flex-direction: column;
 }
 
@@ -44,7 +46,7 @@
 }
 
 .footer-box a {
-    color: #111;
+    color: var(--text-black);
 }
 
 .footer-box a:hover {
@@ -53,13 +55,13 @@
 }
 
 .footer-text {
-    color: #111;
+    color: var(--text-black);
     text-align: center;
     font-size: 1.2rem;
 }
 
 .footer-text a {
-    color: #111;
+    color: var(--text-black);
     font-weight: bolder;
     text-transform: uppercase;
     text-decoration: underline;

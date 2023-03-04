@@ -34,20 +34,14 @@
     color: var(--strong-color);
 }
 
-@media (max-width: 425px) {
+@media (max-width: 500px) {
     .navbar-menu a {
-        font-size: 1rem;
-    }
-}
-
-@media (max-width: 375px) {
-    .navbar-menu a {
-        font-size: 0.90rem;
+        font-size: 0.60rem;
     }
 }
 
 @media (max-width: 350px) {
     .navbar-menu a {
-        font-size: 0.70rem;
+        font-size: 0.40rem;
     }
 }
