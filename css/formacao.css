@@ -1,0 +1,104 @@
+.formacao-bg {
+    height: auto;
+    width: 100%;
+    background: var(--background);
+    position: relative;
+    z-index: 2;
+    color: var(--color-text);
+}
+
+.formacao-title {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: var(--color-strong);
+    font-weight: 500;
+    letter-spacing: -.75px;
+}
+
+.formacao-espec-title {
+    margin-bottom: 10px;
+}
+
+.formacao-icons-box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.curso-box, .data-box {
+    display: flex;
+    gap: 10px;
+}
+
+.calendar {
+    position: relative;
+    margin-left: 422px;
+}
+
+.calendar::before {
+    white-space: nowrap;
+    position: absolute;
+    content: '22/12/2022 - 08/06/2023';
+    left: 30px;
+}
+
+.formacao-title-certificado {
+    margin-top: 40px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: var(--color-text);
+    margin-bottom: 20px;
+    color: var(--color-strong);
+    font-weight: normal;
+    letter-spacing: -.75px;
+}
+
+.splide {
+    padding: 20px 0;
+  }
+  
+.splide__slide img{
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    transition: transform 400ms;
+    transform: scale(.9);
+    transform-origin: center center;
+}
+  
+.splide__slide.is-active img{
+    transform: scale(1);
+}
+  
+.splide .splide__arrow {
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    transform: none;
+    border-radius: unset;
+    width: 50px;
+    opacity: .9;
+}
+
+.splide__arrow svg {
+    fill: var(--color-text) !important;
+}
+
+.splide__arrow.splide__arrow--prev {
+    left: 0;
+    background: transparent;
+}
+
+.splide__arrow.splide__arrow--next {
+    right: 0;
+    background: transparent;
+}
+
+@media (max-width: 500px) {
+    .formacao-icons-box {
+        font-size: 12px;
+    }
+}

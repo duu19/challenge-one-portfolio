@@ -1,135 +1,458 @@
-.projetos-bg {
-    margin: 0 auto;
-    max-width: 1200px;
-    padding: 40px 20px;
-}
-.projetos-tittle {
-    font-size: 6rem;
-    color: var(--strong-color);
-    text-align: start;
-    max-width: 1200px;
-    text-transform: uppercase;
-    margin-bottom: 2rem;
+.projetos-selecionado-bg {
+    height: auto;
+    width: 100%;
+    background: var(--background);
 }
 
-.projetos-tittle2 {
-    font-size: 6rem;
-    color: var(--text-black);
-    text-align: start;
-    max-width: 1200px;
-    text-transform: uppercase;
+.projetos-selecionado-bg h1 {
+    font-size: 2rem;
+    color: var(--color-text);
+    margin-top: 20px;
 }
 
-.projetos-container {
+.status {
+    margin-top: 40px;
     display: flex;
-    flex-wrap: wrap;
-    gap: 25px;
-    margin-bottom: 2rem;
+    color: var(--color-text);
+    gap: 100px;
 }
 
-.projetos-tittle-div {
+.status-check-box, .status-stacks-box {
     display: flex;
-    flex-direction: row;
-    align-items: center;
     gap: 10px;
 }
 
-.projetos-link  {
-    color: black;
-    text-decoration: underline;
+.bi {
+    color: var(--color-strong);
 }
 
-.projetos-link:hover {
-    transition: 0.5s;
-    color: var(--strong-color);
-}
-
-.projetos-box {
-    width: 370px;
-    background: var(--projetos-bg);
-    border-radius: 8px;
-    padding: 15px;
-    height: auto;
-}
-
-.projetos-box h3 {
-    font-size: 1.3rem;
-    margin-bottom: 5px;
-}
-
-.projetos-box p {
-    color: var(--projetos-text);
-    margin-bottom: 5px;
-}
-
-.projetos-list {
-    list-style: none;
+.projetos-imagens-box {
+    margin-top: 40px;
     display: flex;
-    gap: 15px;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.projetos-list li {
-    color: #fff;
+.projetos-selecionado-img {
+    cursor: pointer;
+    height: 180px;
+    object-fit: contain;
+    max-width: 280px;
+    border-radius: 5px;
+}
+
+.brighten img {
+    -webkit-filter: brightness(60%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+    }
+    
+.brighten img:hover {
+    -webkit-filter: brightness(100%);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 11;
+    padding-top: 150px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.img-modal {
+    width: 800px;
+    height: 600px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 150px;
+}
+  
+.close {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+    color: var(--color-strong);
+    cursor: pointer;
+}
+
+.projetos-descricao-box {
+    margin-top: 40px;
+    display: flex;
+    gap: 25px;
+    justify-content: space-between;
+    color: var(--color-text);
+}
+
+.projetos-descricao-list, .projetos-descricao-list-tools {
+    width: 270px;
+    list-style: none;
+}
+
+.projetos-descricao-list h2 {
+    text-transform: uppercase;
+    letter-spacing: -.75px;
+    margin-bottom: 20px;
+}
+
+.projetos-descricao-list-tools h2 {
+    text-transform: uppercase;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.projetos-descricao-links  {
+    width: 270px;
+    list-style: none;
+}
+
+.projetos-descricao-links-box {
+    display: flex;
+    font-size: 1.6rem;
+    gap: 10px;
+}
+
+.projetos-descricao-links-box a {
+    border-radius: 5px;
+    background: var(--background-links);
+    padding: 5px 10px;
+}
+
+.projetos-descricao-links-box a:hover {
+    transition: 0.4s;
+    background: var(--color-strong);
+}
+
+.projetos-descricao-links-box .links-bi:hover {
+    transition: 0.4s;
+    color: var(--color-text);
+}
+
+.projetos-descricao-links h2 {
+    text-transform: uppercase;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.projetos-sobre-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.projetos-sobre h2 {
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.projetos-sobre-list {
     margin-top: 10px;
-    background: var(--strong-color);
+    margin-left: 20px;
+    list-style: decimal;
+}
+
+.badges-title {
+    margin-top: 20px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.badges {
+    width: 150px;
+    margin-left: 20px;
+    border-bottom: 1px solid var(--color-text);
+}
+
+.projetos-nav-list {
+    margin-top: 16px;
+    margin-left: 20px;
+}
+
+.ul-nav-list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.projetos-nav-list a {
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+.projetos-nav-list li {
+    margin-top: 10px;
+}
+
+/* 
+  You want a simple and fancy tooltip?
+  Just copy all [data-tooltip] blocks:
+*/
+[data-tooltip] {
+    --arrow-size: 5px;
+    position: relative;
+    z-index: 1;
+}
+  
+  /* Positioning and visibility settings of the tooltip */
+[data-tooltip]:before,
+[data-tooltip]:after {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    left: 50%;
+    bottom: calc(100% + var(--arrow-size));
+    pointer-events: none;
+    transition: 0.2s;
+    will-change: transform;
+}
+  
+  /* The actual tooltip with a dynamic width */
+[data-tooltip]:before {
+    content: attr(data-tooltip);
+    padding: 10px 18px;
+    min-width: 50px;
+    max-width: 300px;
+    width: max-content;
+    width: -moz-max-content;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: rgba(59, 72, 80, 0.9);
+    background-image: linear-gradient(30deg,
+      rgba(59, 72, 80, 0.44),
+      rgba(59, 68, 75, 0.44),
+      rgba(60, 82, 88, 0.44));
+    box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    text-align: center;
+    white-space: pre-wrap;
+    transform: translate(-50%,  calc(0px - var(--arrow-size))) scale(0.5);
+}
+  
+  /* Tooltip arrow */
+[data-tooltip]:after {
+    content: '';
+    border-style: solid;
+    border-width: var(--arrow-size) var(--arrow-size) 0px var(--arrow-size); /* CSS triangle */
+    border-color: rgba(55, 64, 70, 0.9) transparent transparent transparent;
+    transition-duration: 0s; /* If the mouse leaves the element, 
+                                the transition effects for the 
+                                tooltip arrow are "turned off" */
+    transform-origin: top;   /* Orientation setting for the
+                                slide-down effect */
+    transform: translateX(-50%) scaleY(0);
+}
+  
+  /* Tooltip becomes visible at hover */
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after {
+    visibility: visible;
+    opacity: 1;
+}
+
+  /* Scales from 0.5 to 1 -> grow effect */
+[data-tooltip]:hover:before {
+    transition-delay: 0.3s;
+    transform: translate(-50%, calc(0px - var(--arrow-size))) scale(1);
+}
+  /* 
+    Arrow slide down effect only on mouseenter (NOT on mouseleave)
+  */
+[data-tooltip]:hover:after {
+    transition-delay: 0.5s; /* Starting after the grow effect */
+    transition-duration: 0.2s;
+    transform: translateX(-50%) scaleY(1);
+}
+  /*
+    That's it for the basic tooltip.
+  
+    If you want some adjustability
+    here are some orientation settings you can use:
+  */
+  
+  /* LEFT */
+  /* Tooltip + arrow */
+[data-tooltip-location="left"]:before,
+[data-tooltip-location="left"]:after {
+    left: auto;
+    right: calc(100% + var(--arrow-size));
+    bottom: 50%;
+}
+  
+  /* Tooltip */
+[data-tooltip-location="left"]:before {
+    transform: translate(calc(0px - var(--arrow-size)), 50%) scale(0.5);
+}
+  [data-tooltip-location="left"]:hover:before {
+    transform: translate(calc(0px - var(--arrow-size)), 50%) scale(1);
+}
+  
+  /* Arrow */
+[data-tooltip-location="left"]:after {
+    border-width: var(--arrow-size) 0px var(--arrow-size) var(--arrow-size);
+    border-color: transparent transparent transparent rgba(55, 64, 70, 0.9);
+    transform-origin: left;
+    transform: translateY(50%) scaleX(0);
+}
+  [data-tooltip-location="left"]:hover:after {
+    transform: translateY(50%) scaleX(1);
+}
+  
+  /* RIGHT */
+[data-tooltip-location="right"]:before,
+[data-tooltip-location="right"]:after {
+    left: calc(100% + var(--arrow-size));
+    bottom: 50%;
+}
+  
+[data-tooltip-location="right"]:before {
+    transform: translate(var(--arrow-size), 50%) scale(0.5);
+}
+
+[data-tooltip-location="right"]:hover:before {
+    transform: translate(var(--arrow-size), 50%) scale(1);
+}
+  
+[data-tooltip-location="right"]:after {
+    border-width: var(--arrow-size) var(--arrow-size) var(--arrow-size) 0px;
+    border-color: transparent rgba(55, 64, 70, 0.9) transparent transparent;
+    transform-origin: right;
+    transform: translateY(50%) scaleX(0);
+}
+
+[data-tooltip-location="right"]:hover:after {
+    transform: translateY(50%) scaleX(1);
+}
+  
+  
+  
+  /* BOTTOM */
+[data-tooltip-location="bottom"]:before,
+[data-tooltip-location="bottom"]:after {
+    top: calc(100% + var(--arrow-size));
+    bottom: auto;
+}
+  
+[data-tooltip-location="bottom"]:before {
+    transform: translate(-50%, var(--arrow-size)) scale(0.5);
+}
+
+[data-tooltip-location="bottom"]:hover:before {
+    transform: translate(-50%, var(--arrow-size)) scale(1);
+}
+  
+[data-tooltip-location="bottom"]:after {
+    border-width: 0px var(--arrow-size) var(--arrow-size) var(--arrow-size);
+    border-color: transparent transparent rgba(55, 64, 70, 0.9) transparent;
+    transform-origin: bottom;
+}
+
+@keyframes moveFocus { 
+    0%   { background-position: 0% 100% }
+    100% { background-position: 100% 0% }
+}
+
+.example-elements {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    padding-right: 4%;
+}
+  
+.example-elements p {
     padding: 6px;
-    border-radius: 4px;
-    border: 2px solid var(--strong-color);
+    display: inline-block;
+    margin-bottom: 5%;
+    color: #fff;
 }
 
-@media (max-width: 1199px) {
-    .projetos-box {
-        width: 275px;
-    }
-    .projetos-container {
-        justify-content: center;
-    }
-    .projetos-list li {
-        padding: 4px;
-        font-size: 10px;
-    }
+.example-elements p:hover {
+    border-left: 1px solid lightgrey;
+    border-right: 1px solid lightgrey;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+  
+.example-elements a {
+    margin-left: 6px;
+    margin-bottom: calc(5% + 10px);
+    color: #76daff;
+    text-decoration: none;
 }
 
-@media (max-width: 925px) {
-    .projetos-box {
-        width: 370px;
-    }
+.example-elements a:hover {
+    margin-bottom: calc(5% + 9px);
+    border-bottom: 1px solid #76daff;
+}
+  
+.example-elements button {
+    margin-bottom: 20px;
+}
+  
+.info-wrapper {
+    flex-grow: 8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    padding-left: 6%;
+    border-left: 3px solid #35ea95;
+}
+  
+.info-wrapper p {
+    color: rgba(255, 255, 255, 0.69);
 }
 
-@media (max-width: 700px) {
-    .projetos-tittle {
-        font-size: 3.5rem;
+.info-wrapper p {
+    max-width: 600px;
+    text-align: justify;
 }
-    .projetos-container {
-        justify-content: center;
-    }
-}
-
-@media (max-width: 550px) {
-    .projetos-tittle{
-        letter-spacing: 2px;
-        font-size: 2.7rem;
-        text-align: center;
-    }
-    .projetos-tittle2{
-        letter-spacing: 2px;
-        font-size: 2.7rem;
-        text-align: center;
-    }
-    .projetos-container {
-        justify-content: center;
-    }
-    .sobre-box h2 {
-        font-size: 2rem;
-        word-break: break-all;
-    }
+  
+.info-wrapper .title-question {
+    display: block;
+    color: #fff;
+    font-size: 1.36em;
+    font-weight: 500;
+    padding-bottom: 24px;
 }
 
-@media (max-width: 415px) {
-    .projetos-box {
-        width: 375px;
+@media (max-width: 500px) {
+    .projetos-selecionado-bg h1 {
+        font-size: 1.5rem;
     }
-    .projetos-list li {
-        font-size: 10px;
+    .projetos-selecionado-img {
+        max-width: 340px;
+        margin-bottom: 10px;
+    }
+    .projetos-imagens-box {
+        flex-direction: column;
+    }
+    .projetos-descricao-box {
+        flex-direction: column;
+    }
+    .status {
+        gap: 25px;
+    }
+    .img-modal {
+        width: 330px;
+        display: block;
+        margin-left: 20px;
+    }
+}
+@media (max-width: 380px) {
+    .status-check-box {
+        font-size: 12px;
     }
 }

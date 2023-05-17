@@ -1,0 +1,28 @@
+.hero-projetos-lista-bg {
+    height: auto;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: var(--background);
+}
+
+.padding-hero-projetos-lista {
+    padding-bottom: 0px !important;
+}
+
+.hero-projetos-box-text {
+    font-size: 1.3rem;
+    letter-spacing: -.75px;
+    margin: 0 auto;
+    margin-top: 100px;
+    color: var(--color-text);
+}
+
+.hero-projetos-box-text h1 {
+    text-transform: uppercase;
+}
+
+.hero-projetos-box-text p {
+    margin-top: 100px;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
